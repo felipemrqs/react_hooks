@@ -11,7 +11,7 @@ interface LogoProps {
 
 export default function Logo(props: LogoProps) {
     return (
-        <Link href="/public" className="cursor-pointer">
+        <Link href="/" className="cursor-pointer">
             <Flex col={props.col} centerCross className={props.className}>
                 <div
                     className={`

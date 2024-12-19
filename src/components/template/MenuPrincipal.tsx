@@ -4,13 +4,16 @@ import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
+import {IconNumbers} from "@tabler/icons-react";
 
 export default function MenuPrincipal() {
     const secoes = [
         {
             titulo: "Essenciais",
             aberta: true,
-            itens: [],
+            itens: [
+                { icone: <IconNumbers/>, titulo: "Contador", tag: "useState", url: "/essenciais/contador" },
+            ],
         },
     ];
     const mini = false;
