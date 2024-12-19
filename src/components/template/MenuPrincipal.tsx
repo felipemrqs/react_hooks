@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
-import {IconNumbers} from "@tabler/icons-react";
+import {IconNumbers, IconUsers} from "@tabler/icons-react";
 
 export default function MenuPrincipal() {
     const secoes = [
@@ -13,6 +13,8 @@ export default function MenuPrincipal() {
             aberta: true,
             itens: [
                 { icone: <IconNumbers/>, titulo: "Contador", tag: "useState", url: "/essenciais/contador" },
+                { icone: <IconUsers/>, titulo: "Votação", tag: "useState", url: "/essenciais/votacao" },
+
             ],
         },
     ];
