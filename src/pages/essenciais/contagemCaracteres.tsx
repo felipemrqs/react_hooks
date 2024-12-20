@@ -15,11 +15,11 @@ export default function ContagemCaracteres() {
 
     return (
         <Pagina titulo="Contagem de Caracteres">
-            <Display texto="Digite algo" textoComplementar={`${caracteresRestantes} caracteres restantes.`} />
+            <Display texto="Digite algo" textoComplementar={`${caracteresRestantes} caracteres restantes`} />
             <textarea
                 ref={refTexto}
                 onInput={atualizarContagem}
-                className="border border-zinc-700 bg-zinc-700 text-white w-full p-2 resize-none"
+                className="border border-zinc-700 bg-zinc-700 text-white w-full p-2 rounded h-1/5"
             />
         </Pagina>
     );
