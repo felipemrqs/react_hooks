@@ -16,7 +16,7 @@ export default function () {
     }, []);
 
     return (
-        <Pagina>
+        <Pagina titulo={"Imagem aleatória"} subtitulo={"Usando useEffect para evitar loop"}>
             {url && <img src={url} alt="Doguinho"/>}
         </Pagina>
     );

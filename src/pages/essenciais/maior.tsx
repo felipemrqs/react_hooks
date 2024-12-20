@@ -14,7 +14,7 @@ export default function Maior() {
     }, [n1, n2]);
 
     return (
-        <Pagina>
+        <Pagina titulo={"Maior valor entre dois números"} subtitulo={"Usando useEffect vinculado às variáveis do componente"}>
             <Display texto={`N1: ${n1} | N2: ${n2}`} textoComplementar={`O maior valor é: ${maior}`}/>
             <Flex>
                 <Botao texto="N1" onClick={() => setN1(n1 + 1)}/>
