@@ -1,10 +1,10 @@
-import { MenuItem } from "@/data/models/MenuItem";
-import { MenuSecao } from "@/data/models/MenuSecao";
+import {MenuItem} from "@/data/models/MenuItem";
+import {MenuSecao} from "@/data/models/MenuSecao";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 import Flex from "./Flex";
-import {IconNumbers, IconUsers} from "@tabler/icons-react";
+import {IconArrowsLeftRight, IconNumbers, IconUsers} from "@tabler/icons-react";
 
 export default function MenuPrincipal() {
     const secoes = [
@@ -12,13 +12,14 @@ export default function MenuPrincipal() {
             titulo: "Essenciais",
             aberta: true,
             itens: [
-                { icone: <IconNumbers/>, titulo: "Contador", tag: "useState", url: "/essenciais/contador" },
-                { icone: <IconUsers/>, titulo: "Votação", tag: "useState", url: "/essenciais/votacao" },
-
+                {icone: <IconNumbers/>, titulo: "Contador", tag: "useState", url: "/essenciais/contador"},
+                {icone: <IconUsers/>, titulo: "Votação", tag: "useState", url: "/essenciais/votacao"},
+                {icone: <IconArrowsLeftRight/>, titulo: "Imagem", tag: "useEffect", url: "/essenciais/imagem"},
             ],
         },
     ];
     const mini = false;
+
     function renderizarSecoes() {
         return secoes.map((secao: MenuSecao) => (
             <MenuPrincipalSecao key={secao.titulo} titulo={secao.titulo} mini={mini} aberta={secao.aberta}>
@@ -51,7 +52,7 @@ export default function MenuPrincipal() {
         `}
         >
             <Flex center className="m-7">
-                {!mini && <Logo />}
+                {!mini && <Logo/>}
             </Flex>
             <nav className="flex flex-col gap-4 m-7">{renderizarSecoes()}</nav>
         </aside>
