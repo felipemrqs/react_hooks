@@ -19,7 +19,7 @@ export default function ContagemCaracteres() {
             <textarea
                 ref={refTexto}
                 onInput={atualizarContagem}
-                className="border border-zinc-700 bg-zinc-700 text-white w-full p-2 rounded h-1/5"
+                className="border border-zinc-700 bg-zinc-700 text-white rounded w-2/5 h-1/5"
             />
         </Pagina>
     );
